@@ -22,7 +22,7 @@ Brigham Young University Idaho
 - Intermediate Excel (VLOOKUP’s, pivot tables)
 - French (conversational fluency)
 - SQL (Has created a nontrivial database)
-- Intermediate Statistics (ANOVA, multiple linear regression, logistical regression, R) 
+- Data Science (Beginner level, Reading and interpreting data, Machine Learning, data visualisation.) 
 
 ## Experience
 **DoubleTree by Hilton | Front Desk Receptionist**
