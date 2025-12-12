@@ -1,51 +1,93 @@
 ---
 layout: cv
 title: David Lawrence's cv
+theme: readable
 ---
 # David Lawrence
-Student attending BYUI 
 
 
-## Currently
-
-Currently studying economics and data science with a plan to continue education in graduate school. Has taken courses in excel, courses in SQL and business analytics in progress.
-
-
-## Education
-BACHELOR OF SCIENCE IN ECONOMICS, MINOR IN DATA SCIENCE IN PROGRESS
-Brigham Young University Idaho
-2020 - 2027
+**Phone:** (309)-533-3431 \\
+**Email:** <drl.lawrence2@gmail.com> \\
+**LinkedIn:** <https://www.linkedin.com/in/davidlawrence001/>
 
 
-## Skills
+---
 
-- Intermediate Excel (VLOOKUP’s, pivot tables)
+
+# Education
+
+
+**Bachelor of Science** \\
+*Brigham Young University - Idaho, Rexburg, Idaho* \\
+**January 2020 – December 2027**
+
+
+- Bachelor of Science in Economics, Minor in Data Science (in progress)
+- Coursework includes Excel, SQL, Python, R, and Business Analytics
+- Currently studying economics and data science with plans for graduate school
+
+
+---
+
+
+# Skills
+
+
+- SQL
+- Intermediate Python
+- Excel
+- R
 - French (conversational fluency)
-- SQL (Has created a nontrivial database)
-- Data Science (Beginner level, Reading and interpreting data, Machine Learning, data visualisation.) 
+- Statistical Analysis
 
-## Experience
-**DoubleTree by Hilton | Front Desk Receptionist**
-*April – October 2021*
 
-- Able to problem solve under stress ensuring payments and optimizing checkouts.
+---
 
-- Demonstrated ingenuity by optimizing guest records and preemptively reaching out to 
-clients to solve special requests, saved an average of one hour during rush periods.
 
-- Elevated workplace attire by buying and wearing a suit when not required, coworkers all bought suits afterwards.
+# Experience
 
-- Solved custom client requests outside my job responsibilities to improve client satisfaction.
 
-**Church of Jesus Christ of Latter-Day Saints | Full Time Volunteer Representative**
-*November 2021 – November 2023* 
+## Legal Intern \\
+**Huhem Law Firm PLLC — Dallas, Texas** \\
+*July 2025 – September 2025*
 
-- Served as a volunteer in the Cote d’Ivoire, involved: rigorous planning and goal setting in leadership positions, creating service opportunities.
 
-- Responsible for training other volunteers by teaching the language, helping volunteers to adhere to cultural rules and obligations, and demonstrating proper teaching techniques. 
+- Identified a procedural gap during trial preparation by consulting opposing counsel post-hearing and recommended a documentation protocol, saving clients hundreds of dollars per case
+- Drafted and filed legal documents including eviction petitions, civil litigation petitions, demand letters, and legal memos
+- Represented firm's clients in court as an agent, winning more than 90% of cases
 
-- Obtained conversational and written fluency in French within six months by speaking with and teaching native speakers daily.
 
+## Volunteer \\
+**Church of Jesus Christ of Latter-Day Saints — Abidjan, Côte d'Ivoire** \\
+*November 2021 – November 2023*
+
+
+- Served as a full-time volunteer focusing on planning, goal setting, leadership, and creating service opportunities
+- Gained conversational and written fluency in French within six months by working daily with native speakers
+- Trained and supervised more than 20 volunteers by teaching French, cultural norms, and effective teaching techniques
+
+
+## Front Desk Receptionist \\
+**DoubleTree by Hilton — Bloomington, Illinois** \\
+*April 2021 – October 2021*
+
+
+- Solved problems under pressure, ensuring accurate payments and improving workflow, preventing major financial losses
+- Improved efficiency by optimizing guest records and proactively addressing special requests, saving an average of one hour during rush periods
+- Provided exceptional service by fulfilling custom client requests beyond standard job duties
+- Elevated workplace appearance by consistently wearing a suit, inspiring coworkers to follow
+
+
+---
+
+
+# Courses
+
+
+- Intermediate Statistics
+- Data Wrangling and Visualization (R)
+- SQL (Database Design)
+- Intermediate Macroeconomics
 
 <!-- ### Footer
 
