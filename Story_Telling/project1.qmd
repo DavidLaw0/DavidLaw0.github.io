@@ -1,7 +1,7 @@
 ---
 title: "NYC Bikes"
-subtitle: "Course DS 250"
-author: "[STUDENT NAME]"
+subtitle: ""
+author: "David Lawrence"
 format:
   html:
     self-contained: true
@@ -38,7 +38,7 @@ ny <- vroom("C:/Users/User/OneDrive/Documents/semester_data/vehicle_data.zip")
 wet <- vroom("C:/Users/User/OneDrive/Documents/semester_data/archive.zip")
 ```
 
-# Bike Crashes in New York City 
+# Bike Crashes in New York City
 
 Everyday there are hundreds of accidents in New York City. The large population means that the roads are crowded and driving can be dangerous. In order to avoid the traffic many residents choose to use bikes as a means of transport. Although this method might save time and provide good exercise it also comes with an increase in risk. Bikers\* are more exposed than other commuters and must exercise more precaution. An effort to understand the cause, location, and frequency of accidents might lead to real world changes that could save lives.
 
@@ -143,7 +143,7 @@ leaflet(data = bike_crashes) %>%
     
     popup = ~paste(
       "<b>Date:</b>", DATE, "<br>",
-      "<b>Weather:</b>", is_rainy, "(", round(PRCP,2), " in)", "<br>",
+      "<b>Weather:</b>", is_rainy, "(", round(PRCP,2), " mm/hr)", "<br>",
       "<b>Injured:</b>", `NUMBER OF CYCLIST INJURED`,
       "<b>Killed:</b>", `NUMBER OF CYCLIST KILLED`, "<br>",
       "<b>Main factor:</b>", top_factor),
@@ -157,7 +157,7 @@ leaflet(data = bike_crashes) %>%
 
 ## **The Rain Effect**
 
-The graph below shows the correlation between rainfall (precipitation) and bike crashes. The purpose was to see if there was in fact a correlation between the amount of rain and the number of crashes. The answer seems to be no. My theory is that the more that it rains, the less cyclists there are on the road. To determine whether there is a higher proportion of crashes per rider one would have to know how many cyclists are riding at that moment and out of that total number how many got into an accident. Unfortunately I don’t think that data is feasible to collect. Using the slider you can see that often a peak in precipitation is met with a dip in crashes, meanig a weak correlation, while there some spikes that align the majority miss each other.
+The graph below shows the correlation between rainfall (precipitation) and bike crashes. The purpose was to see if there was in fact a correlation between the amount of rain and the number of crashes. The answer seems to be no. My theory is that the more that it rains, the less cyclists there are on the road. To determine whether there is a higher proportion of crashes per rider one would have to know how many cyclists are riding at that moment and out of that total number how many got into an accident. Unfortunately I don’t think that data is feasible to collect. Using the slider you can see that often a peak in precipitation is met with a dip in crashes, meaning a weak correlation, while there some spikes that align the majority miss each other.
 
 ```{r}
 library(xts)
