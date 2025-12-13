@@ -55,6 +55,8 @@ jobs:
             any::vroom
             any::knitr
             any::DT
+            any::dygraphs
+            any::xts
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
