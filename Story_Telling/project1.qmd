@@ -25,6 +25,32 @@ execute:
 ---
 
 ```{r}
+#| include: false
+#| message: false
+#| warning: false
+
+# List all required packages
+packages <- c(
+  "tidyverse",
+  "lubridate",
+  "leaflet",
+  "leaflet.extras",
+  "viridis",
+  "scales",
+  "vroom"
+)
+
+# Install any missing packages
+installed <- packages %in% rownames(installed.packages())
+if(any(!installed)) install.packages(packages[!installed])
+
+# Load all packages
+lapply(packages, library, character.only = TRUE)
+
+
+```
+
+```{r}
 
 library(tidyverse)
 library(lubridate)
@@ -161,8 +187,17 @@ leaflet(data = bike_crashes) %>%
 The graph below shows the correlation between rainfall (precipitation) and bike crashes. The purpose was to see if there was in fact a correlation between the amount of rain and the number of crashes. The answer seems to be no. My theory is that the more that it rains, the less cyclists there are on the road. To determine whether there is a higher proportion of crashes per rider one would have to know how many cyclists are riding at that moment and out of that total number how many got into an accident. Unfortunately I don’t think that data is feasible to collect. Using the slider you can see that often a peak in precipitation is met with a dip in crashes, meaning a weak correlation, while there some spikes that align the majority miss each other.
 
 ```{r}
-library(xts)
-library(dygraphs)
+#| include: false
+#| message: false
+#| warning: false
+
+packages2 <- c("dygraphs","xts")
+installed2 <- packages2 %in% rownames(installed.packages())
+if(any(!installed2)) install.packages(packages2[!installed2])
+lapply(packages2, library, character.only = TRUE)
+```
+
+```{r}
 
 
 daily <- bike_crashes %>%
