@@ -1,5 +1,5 @@
 ---
-title: "Client Report - [Insert Project Title]"
+title: "NYC Bikes"
 subtitle: "Course DS 250"
 author: "[STUDENT NAME]"
 format:
@@ -22,7 +22,303 @@ format:
         caption: See code
 execute: 
   warning: false
-    
 ---
 
-### Paste in a template
+```{r}
+library(tidyverse)
+library(lubridate)
+library(leaflet)
+library(leaflet.extras) 
+library(viridis)
+library(scales)
+library(vroom)
+
+
+ny <- vroom("C:/Users/User/OneDrive/Documents/semester_data/vehicle_data.zip")
+wet <- vroom("C:/Users/User/OneDrive/Documents/semester_data/archive.zip")
+```
+
+# Bike Crashes in New York City 
+
+Everyday there are hundreds of accidents in New York City. The large population means that the roads are crowded and driving can be dangerous. In order to avoid the traffic many residents choose to use bikes as a means of transport. Although this method might save time and provide good exercise it also comes with an increase in risk. Bikers\* are more exposed than other commuters and must exercise more precaution. An effort to understand the cause, location, and frequency of accidents might lead to real world changes that could save lives.
+
+\*This analysis only shows the Bicycle accidents not motorcycle.
+
+## Data Collection and Filtering
+
+In this analysis I use data collected from Kaggle. Namely, the Central Park NYC Weather Information data set that has weather information from the central park weather station from the years 2000-2022. As well as the Motor Vehicle Collisions - Crashes data set that has all police reported crashes in NYC. To keep the analysis relevant I decided to filter the data to include only years 2021 and 2022 (the two most recent years from the weather data set). I then filtered the motor vehicle collisions in two ways.
+
+1.  By longitude and latitude to focus on Manhattan surrounding central park, so the weather information might be accurate to the crash incidents.
+
+2.  I limited the crashes to only those that included a bicycle since that is our target group.
+
+```{r}
+ny1 <- ny %>%
+  mutate(`CRASH DATE` = mdy(`CRASH DATE`))
+
+
+ny_clean <- ny1 %>%
+  filter(!is.na(LATITUDE), !is.na(LONGITUDE),
+         LATITUDE  > 40.708073, LATITUDE  < 40.833170,
+         LONGITUDE > -74.013195, LONGITUDE < -73.930574)
+
+
+ny_2022 <- ny_clean %>%
+  filter(year(`CRASH DATE`) >= 2021 & year(`CRASH DATE`) <= 2022) %>%
+  rename(DATE = `CRASH DATE`)
+
+
+wet_clean <- wet %>%
+  filter(year(DATE) >= 2021 & year(DATE) <= 2022,
+         STATION == "USW00094728") %>%
+  select(DATE, PRCP, TMAX, TMIN, SNOW)
+
+# Final dataset with weather
+ny8 <- ny_2022 %>%
+  left_join(wet_clean, by = "DATE")
+
+
+bike_crashes <- ny8 %>%
+  filter(`NUMBER OF CYCLIST INJURED` > 0 | `NUMBER OF CYCLIST KILLED` > 0 |
+         str_detect(tolower(`VEHICLE TYPE CODE 1`), "bike|bicycle") |
+         str_detect(tolower(`VEHICLE TYPE CODE 2`), "bike|bicycle") |
+         str_detect(tolower(`VEHICLE TYPE CODE 3`), "bike|bicycle") |
+         str_detect(tolower(`VEHICLE TYPE CODE 4`), "bike|bicycle") |
+         str_detect(tolower(`VEHICLE TYPE CODE 5`), "bike|bicycle")) %>%
+  mutate(
+    year= year(DATE),
+    month = month(DATE, label = TRUE),
+    day_of_week = wday(DATE, label = TRUE, abbr = FALSE),
+    is_rainy= if_else(PRCP > .05, "Rain", "Dry"),    # >0.01 inches = rainy day
+    severity = case_when(
+      `NUMBER OF CYCLIST KILLED` > 0 ~ "Fatal",
+      `NUMBER OF CYCLIST INJURED` > 0 ~ "Injury",
+      TRUE ~ "Property Damage Only"
+    ),top_factor = `CONTRIBUTING FACTOR VEHICLE 1`,
+    top_factor = if_else(is.na(top_factor) | top_factor %in% c("", "Unspecified"),
+                         "Other/Unspecified", top_factor))
+
+
+View(bike_crashes)
+cat("Total bike-involved crashes 2021-2022:", nrow(bike_crashes), "\n")
+
+```
+
+## **Data Wrangling**
+
+The data wrangling process was made relatively simple by Kaggle’s high standard of clean data. Most of the adjustments were simple filters to target the data I needed, mutates to add categorical bins, as well as a join to combine the data sets. As you can see this left us with 4,685 rows of data to work with.
+
+There were a few choices that I had to make while defining a “rainy” day or the “severity” of the accident. I choose classify any precipitation \> 0.05 mm/hr as a rainy day. (I will examine the effects of changing this number later in the analysis). Although this is in reality very little rain it is still enough to make the pavement wet and have an effect on the accident rates. In my second graph below I examine the precipitation vs bike crashes and find very little relevance and so this decision seems to be inconsequential. Severity was determined as follows, if there were any fatalities than the accident was considered “Fatal”, if there was an injury than it was grouped as “Injury” and if neither of these, the accident was classified as “Property Damage Only” under the assumption that some damage occurred to the bike or vehicle.
+
+## **Mapping the Data**
+
+The map below serves as the focal point of this project, and it servers a few function.
+
+1.  It shows the density of accidents such that it is easy to determine problematic areas.
+
+2.  The marker of each accident is color coded for the type or weather, or whether or not the accident was fatal. Since a Fatal accident is viewed with more gravity I decided this would trump the weather color coding, however by clicking on a marker you are able to see weather information for that day.
+
+3.  The interactive map shows the reason for each accident. This could be useful if you are examining a particular area and trying to determine if there is a correlation between that area and the contributing factor. (For example there might be more “distracted driver” factors around Times Square.)
+
+User note: In order to find the most dense crash area simply click on the cluster with the largest number and continue to do so until you reach the street level were you can click on each marker to get more information.
+
+```{r}
+pal <- colorFactor(
+  palette = c("Dry" = "orange", "Rain" = "red", "Fatal" = "dodgerblue2"),
+    domain = c("Dry", "Rain", "Fatal")) # after like 20mins of playing with it I just accepted it's weird
+
+leaflet(data = bike_crashes) %>%
+
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  
+    addHeatmap(
+    lng = ~LONGITUDE, lat = ~LATITUDE,
+    blur = 25, max = 0.1, radius = 15) %>%
+  
+  addCircleMarkers(
+    lng = ~LONGITUDE, lat = ~LATITUDE,
+    radius = 10,
+    color = ~pal(ifelse(`NUMBER OF CYCLIST KILLED` > 0, "Fatal", is_rainy)),
+    fillOpacity = 1,
+    
+    popup = ~paste(
+      "<b>Date:</b>", DATE, "<br>",
+      "<b>Weather:</b>", is_rainy, "(", round(PRCP,2), " in)", "<br>",
+      "<b>Injured:</b>", `NUMBER OF CYCLIST INJURED`,
+      "<b>Killed:</b>", `NUMBER OF CYCLIST KILLED`, "<br>",
+      "<b>Main factor:</b>", top_factor),
+    
+    clusterOptions = markerClusterOptions() # Had some help making the popups and clusters
+  ) %>%
+  addLegend("bottomright",
+            pal = pal, values = c("Dry", "Rain", "Fatal"),
+            title = "Weather / Severity")
+```
+
+## **The Rain Effect**
+
+The graph below shows the correlation between rainfall (precipitation) and bike crashes. The purpose was to see if there was in fact a correlation between the amount of rain and the number of crashes. The answer seems to be no. My theory is that the more that it rains, the less cyclists there are on the road. To determine whether there is a higher proportion of crashes per rider one would have to know how many cyclists are riding at that moment and out of that total number how many got into an accident. Unfortunately I don’t think that data is feasible to collect. Using the slider you can see that often a peak in precipitation is met with a dip in crashes, meanig a weak correlation, while there some spikes that align the majority miss each other.
+
+```{r}
+library(xts)
+library(dygraphs)
+
+
+daily <- bike_crashes %>%
+  count(DATE, is_rainy) %>%
+  complete(DATE = seq(min(DATE), max(DATE), by = "day"), fill = list(n = 0)) %>%
+  left_join(select(wet_clean, DATE, PRCP), by = "DATE") %>%
+  replace_na(list(PRCP = 0))
+
+ts_data <- xts(daily[, c("n", "PRCP")], order.by = daily$DATE)
+
+dygraph(ts_data, main = "Daily Bicycle Crashes vs Precipitation (2021-2022)") %>%
+  
+  dySeries("n", label = "Bike Crashes", color = "red") %>%
+  
+  dySeries("PRCP", label = "Precipitation (mm)", axis = "y2", color = "royalblue") %>%
+  
+  dyAxis("y", label = "Number of Crashes") %>%
+  
+  dyAxis("y2", label = "Precipitation (mm)", independentTicks = TRUE) %>%
+  
+  dyRangeSelector() %>%
+  
+  dyHighlight(highlightSeriesOpts = list(strokeWidth = 3)) %>%
+  
+  dyOptions(fillGraph = TRUE) 
+
+```
+
+I made a simplified graph to show the average number of bike crashes on each day of the week split between rainy and dry days. It appears the fewest number of people are traveling Sunday, which makes sense and there is a gradual increase throughout the week with a peak on Thursday and Friday. Notice that there are fewer crashes on rainy days each day of the week, except for Tuesday by a small margin once again confirming my theory of fewer bike commuters on those wet days.
+
+```{r}
+daily_rates <- bike_crashes %>%
+  count(DATE, day_of_week, is_rainy) %>%
+  group_by(day_of_week, is_rainy) %>%
+  summarise(avg_crashes = mean(n)) %>%
+  ungroup()
+
+
+ggplot(daily_rates, aes(x = day_of_week, y = avg_crashes, fill = is_rainy)) +
+  
+
+  geom_col(position = "dodge", color = "black", size = 0.3) +
+  
+  scale_fill_manual(values = c("Dry" = "orange", "Rain" = "dodgerblue2"), name = "") +
+  
+  labs(title = "Bike Crashes, Rainy vs Dry Days",
+       subtitle = "Average daily crashes (2021-2022)",
+       x = "",
+       y = "Average Number of Bike Crashes per Day") +
+  
+  theme_minimal() +
+  
+  theme(legend.position = "top")
+```
+
+For the sake of trying to uncover trends I’m going to change the standard for what is considered a rainy day by tripling the mm/hr precipitation rate from .05mm to 1.5mm/hr. The goal is to show the effect that more rain has on road conditions. If there is little to no change than we can conclude that rain plays little affect in the number of crashes. However if there is an effect we can assume that there is in fact a correlation
+
+```{r}
+bike_crashes2 <- bike_crashes %>% 
+  mutate(is_rainy= if_else(PRCP > 1.5, "Rain", "Dry"))
+
+
+daily_rates2 <- bike_crashes2 %>%
+  count(DATE, day_of_week, is_rainy) %>%
+  group_by(day_of_week, is_rainy) %>%
+  summarise(avg_crashes = mean(n)) %>%
+  ungroup()
+
+ggplot(daily_rates2, aes(x = day_of_week, y = avg_crashes, fill = is_rainy)) +
+  
+
+  geom_col(position = "dodge", color = "black", size = 0.3) +
+  
+  scale_fill_manual(values = c("Dry" = "orange", "Rain" = "dodgerblue2"), name = "") +
+  
+  labs(title = "Bike Crashes, Rainy vs Dry Days",
+       subtitle = "Average daily crashes (2021-2022)",
+       x = "",
+       y = "Average Number of Bike Crashes per Day") +
+  
+  theme_minimal() +
+  
+  theme(legend.position = "top")
+```
+
+Taking a look at the graph we see that there was a change in the average number of accidents a day for most days it appears that Tuesday sees the greatest differential towards rainy day crashes and Saturday for dry day. Notably Saturday and Sunday have the biggest difference in favor of dry days most likely do the elastic need to travel those days.
+
+## **Examining Causes for Accidents.**
+
+Finally the last chart examines the cause of accident depending on the weather that day. The two bars are almost identical such that little can be said for the affect of the rain on the reason for the accident. Once again lets change the classification for rainy day and see the effect.
+
+```{r}
+top_factors <- bike_crashes %>%
+  count(is_rainy, top_factor) %>%
+  group_by(is_rainy) %>%
+  slice_max(n, n = 10) %>%
+  ungroup() %>%
+  mutate(top_factor = fct_reorder(top_factor, n, sum))
+
+
+
+ggplot(top_factors, aes(x = is_rainy, y = n, fill = top_factor)) +
+  
+  geom_col(position = "fill", color = "white", size = 0.3) +
+  
+  scale_y_continuous(labels = percent) +
+  
+  scale_fill_viridis_d(option = "turbo") + #took me forever to find a good color scheme lol
+  
+  labs(title = "Contributing Factor Depending on Weather",
+       x = "", y = "Proportion of All Bike Crashes",
+       fill = "Contributing Factor") +
+  
+  theme_minimal() +
+  
+  theme(legend.position = "right")
+```
+
+### **Rainy day = 05mm/hr -\> Rainy Day = 2mm/hr**
+
+```{r}
+bike_crashes3 <- bike_crashes %>% 
+  mutate(is_rainy= if_else(PRCP > 2, "Rain", "Dry"))
+
+top_factors <- bike_crashes3 %>%
+  count(is_rainy, top_factor) %>%
+  group_by(is_rainy) %>%
+  slice_max(n, n = 10) %>%
+  ungroup() %>%
+  mutate(top_factor = fct_reorder(top_factor, n, sum))
+
+
+
+ggplot(top_factors, aes(x = is_rainy, y = n, fill = top_factor)) +
+  
+  geom_col(position = "fill", color = "white", size = 0.3) +
+  
+  scale_y_continuous(labels = percent) +
+  
+  scale_fill_viridis_d(option = "turbo") + #took me forever to find a good color scheme lol
+  
+  labs(title = "Contributing Factor Depending on Weather",
+       x = "", y = "Proportion of All Bike Crashes",
+       fill = "Contributing Factor") +
+  
+  theme_minimal() +
+  
+  theme(legend.position = "right")
+
+```
+
+We see a few more factors come into play. Passing too closely has an effect and this is probably due to another variable that increase “View Obstructed” likely due to heavy rainfall. And of Course pavement slippery plays a role which is to be expected. It could also be noted that there is a decrease in the driver distraction factor which implies people pay more attention while its raining.
+
+# **Conclusion**
+
+In conclusion the data seems to point to there being a marginal effect on the number of accidents and the weather that day. While there was an increase in the average number of accidents as we raised the standard for rainy day, the difference was not substantial. The dangers to bikers in the rain was shown through the contributing factors graph. According to the bar chart rain inhibits vision, and creates slippery pavement that lend to an increase in accidents.
+
+## **Limitations and Future Work**
+
+To understand the effect weather has on crashed more data could be collected. It might be advantageous to combine multiple weather stations and examine the effects across a greater area. Another option would be to zoom in and focus on an area in closer proximity to the weather station to ensure that the rain is really effecting the riders as it is thought to be. Greater accuracy could also be achieved through having time stamps of the accidents and time stamps of the rain to line, rather than just a 24 period that I used with in this analysis.
