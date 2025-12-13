@@ -109,7 +109,7 @@ bike_crashes <- ny8 %>%
                          "Other/Unspecified", top_factor))
 
 
-View(bike_crashes)
+
 cat("Total bike-involved crashes 2021-2022:", nrow(bike_crashes), "\n")
 
 ```
