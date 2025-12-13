@@ -25,32 +25,15 @@ execute:
 ---
 
 ```{r}
-#| include: false
-#| message: false
-#| warning: false
 
-# List all required packages
-packages <- c(
-  "tidyverse",
-  "lubridate",
-  "leaflet",
-  "leaflet.extras",
-  "viridis",
-  "scales",
-  "vroom"
-)
-
-# Install any missing packages
-installed <- packages %in% rownames(installed.packages())
-if(any(!installed)) install.packages(packages[!installed])
-
-# Load all packages
-lapply(packages, library, character.only = TRUE)
 
 
 ```
 
 ```{r}
+#| include: false
+#| message: false
+#| warning: false
 
 library(tidyverse)
 library(lubridate)
@@ -191,10 +174,9 @@ The graph below shows the correlation between rainfall (precipitation) and bike 
 #| message: false
 #| warning: false
 
-packages2 <- c("dygraphs","xts")
-installed2 <- packages2 %in% rownames(installed.packages())
-if(any(!installed2)) install.packages(packages2[!installed2])
-lapply(packages2, library, character.only = TRUE)
+library(dygraphs)
+library(xts)
+
 ```
 
 ```{r}
