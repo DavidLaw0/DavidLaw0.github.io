@@ -25,6 +25,7 @@ execute:
 ---
 
 ```{r}
+
 library(tidyverse)
 library(lubridate)
 library(leaflet)
