@@ -44,8 +44,8 @@ library(scales)
 library(vroom)
 
 
-ny <- vroom("C:/Users/User/OneDrive/Documents/semester_data/vehicle_data.zip")
-wet <- vroom("C:/Users/User/OneDrive/Documents/semester_data/archive.zip")
+ny <- read_csv("https://github.com/DavidLaw0/DavidLaw0.github.io/releases/download/v1.0.1/Motor_Vehicle_Collisions_-_Crashes_20251201.csv")
+wet <- read_csv("https://github.com/DavidLaw0/DavidLaw0.github.io/releases/download/v1.0.1/CP_Weather.csv")
 ```
 
 # Bike Crashes in New York City
