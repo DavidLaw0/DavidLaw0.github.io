@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Exploration 02 – David Lawrence- Data Science Portfolio</title>
+<title>exploration_02 – David Lawrence- Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -344,7 +344,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-1-import-pandas-and-load-the-data" id="toc-part-1-import-pandas-and-load-the-data" class="nav-link active" data-scroll-target="#part-1-import-pandas-and-load-the-data">Part 1: Import Pandas and load the data</a>
+  <li><a href="#data-exploration-02" id="toc-data-exploration-02" class="nav-link active" data-scroll-target="#data-exploration-02">Data Exploration 02</a>
+  <ul class="collapse">
+  <li><a href="#part-1-import-pandas-and-load-the-data" id="toc-part-1-import-pandas-and-load-the-data" class="nav-link" data-scroll-target="#part-1-import-pandas-and-load-the-data">Part 1: Import Pandas and load the data</a>
   <ul class="collapse">
   <li><a href="#initial-data-analysis" id="toc-initial-data-analysis" class="nav-link" data-scroll-target="#initial-data-analysis">Initial Data Analysis</a></li>
   </ul></li>
@@ -354,6 +356,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#sugar-distribution" id="toc-sugar-distribution" class="nav-link" data-scroll-target="#sugar-distribution">Sugar Distribution</a></li>
   </ul></li>
+  </ul></li>
   <li><a href="#part-5-dietary-calculations" id="toc-part-5-dietary-calculations" class="nav-link" data-scroll-target="#part-5-dietary-calculations">Part 5: Dietary Calculations</a>
   <ul class="collapse">
   <li><a href="#above-and-beyond" id="toc-above-and-beyond" class="nav-link" data-scroll-target="#above-and-beyond">🌟 Above and Beyond 🌟</a></li>
@@ -362,28 +365,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Data Exploration 02</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
+<p><a href="https://colab.research.google.com/github/DavidLaw0/DavidLaw0.github.io/blob/main/notebooks/Exploration_02.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<section id="data-exploration-02" class="level1">
+<h1>Data Exploration 02</h1>
 <p>You’re working as a data analyst at a cereal marketing company in New York.</p>
 <p>In a strategy meeting, the marketing director tells you that in 2018, the US weight loss industry was worth over $72 Billion dollars, growing 4% compared to the previous year.</p>
 <p>In contrast, sales of cold cereal fell 6% to $8.5 billion during the same time period.</p>
@@ -404,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>What kind of data is in each column?</li>
 <li>Do any of the columns have missing values?</li>
 </ul>
-<div id="cell-3" class="cell" data-outputid="7a93d834-ed86-4c52-8b27-077a607ebb3e" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-execution_count="6">
+<div id="cell-3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}}" data-outputid="7a93d834-ed86-4c52-8b27-077a607ebb3e" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 1: Enter your code below to import Pandas according to the</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># conventional method. Then load the dataset into a Pandas dataframe.</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -565,7 +555,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The marketing team has determined that when choosing a cereal, consumers are most interested in <code>calories</code>, <code>sugars</code>, <code>fiber</code>, <code>fat</code>, and <code>protein</code>.</p>
 <p>First, let’s calcuate some summary statistics for these categories across the entire dataset. We’re particularly intrested in the mean, median, standard deviation, min, and max values.</p>
 <p>There are <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html">multiple ways to accomplish this</a>.</p>
-<div id="cell-6" class="cell" data-outputid="069c672b-9964-495d-dee6-871f17c26f18" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:300}}" data-execution_count="13">
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:300}}" data-outputid="069c672b-9964-495d-dee6-871f17c26f18" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Part 2: Enter your code below to calculate summary statistics for the</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># calories, sugars, fiber, fat, and protein features.</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -753,7 +743,7 @@ R = Ralston Purina</code></pre>
 <blockquote class="blockquote">
 <p>Note: While the tutorial linked above uses the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.replace.html"><code>replace</code></a> function, using the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html"><code>map</code></a> function instead can often be much faster and more memory efficient, especially for large datasets.</p>
 </blockquote>
-<div id="cell-8" class="cell" data-outputid="f43c9723-b340-4bb7-950e-728fe7647892" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:310}}" data-execution_count="15">
+<div id="cell-8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:310}}" data-outputid="f43c9723-b340-4bb7-950e-728fe7647892" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the count of values for the manufacturer code ("mfr" column), then</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column containing the appropriate manufacturer names.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>mfr_map <span class="op">=</span> {</span>
@@ -1008,7 +998,7 @@ R = Ralston Purina</code></pre>
 <li><p>A scatter plot showing the relationship between sugar and calories.</p></li>
 <li><p>A box plot showing the distribution of sugar content by manufacturer.</p></li>
 </ul>
-<div id="cell-12" class="cell" data-outputid="5ba14e3c-97b9-4ae0-db08-cc51b6e38702" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}}" data-execution_count="17">
+<div id="cell-12" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}}" data-outputid="5ba14e3c-97b9-4ae0-db08-cc51b6e38702" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the three visualzations requested by the the marketing team</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Histogram of Sugar Content</span></span>
@@ -1053,7 +1043,7 @@ if (outputEl) {{
 
 </div>
 </div>
-<div id="cell-13" class="cell" data-outputid="c91a8fbb-35e4-4e6b-c311-3a857525b59e" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}}" data-execution_count="18">
+<div id="cell-13" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}}" data-outputid="c91a8fbb-35e4-4e6b-c311-3a857525b59e" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fig_scatter <span class="op">=</span> px.scatter(df, x<span class="op">=</span><span class="st">"sugars"</span>, y<span class="op">=</span><span class="st">"calories"</span>,</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                         title<span class="op">=</span><span class="st">"Relationship Between Sugar and Calories"</span>,</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                         labels<span class="op">=</span>{<span class="st">'sugars'</span>: <span class="st">'Sugar (grams)'</span>, <span class="st">'calories'</span>: <span class="st">'Calories'</span>},</span>
@@ -1094,7 +1084,7 @@ if (outputEl) {{
 
 </div>
 </div>
-<div id="cell-14" class="cell" data-outputid="e22c7a36-b025-4737-8afa-4699eeec8daf" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}}" data-execution_count="19">
+<div id="cell-14" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:542}}" data-outputid="e22c7a36-b025-4737-8afa-4699eeec8daf" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>fig_box <span class="op">=</span> px.box(df, x<span class="op">=</span><span class="st">"mfr_name"</span>, y<span class="op">=</span><span class="st">"sugars"</span>,</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                 title<span class="op">=</span><span class="st">"Sugar Content Distribution by Manufacturer"</span>,</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                 labels<span class="op">=</span>{<span class="st">'mfr_name'</span>: <span class="st">'Manufacturer'</span>, <span class="st">'sugars'</span>: <span class="st">'Sugar (grams)'</span>},</span>
@@ -1137,6 +1127,7 @@ if (outputEl) {{
 </div>
 </section>
 </section>
+</section>
 <section id="part-5-dietary-calculations" class="level1">
 <h1>Part 5: Dietary Calculations</h1>
 <p>The marketing team has been able to arrange a partnership between the popular Weight Watchers diet brand and Kelloggs cereal.</p>
@@ -1148,7 +1139,7 @@ if (outputEl) {{
 <p><strong>Be sure to round the number to the nearest int and store the data as an int, not as a float with 0 decimals.</strong></p>
 <p>Then, <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html#how-do-i-filter-specific-rows-from-a-dataframe">select a subset of the data</a> containing just cereals manufactured by Kelloggs.</p>
 <p>Finally, calculate the same summary statistics for the points calculations as earlier (mean, median, standard deviation, min, and max).</p>
-<div id="cell-16" class="cell" data-outputid="ccc4b8de-7fc2-4dcd-8557-c799ee03be99" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-execution_count="22">
+<div id="cell-16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="ccc4b8de-7fc2-4dcd-8557-c799ee03be99" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'ww_points'</span>] <span class="op">=</span> (df[<span class="st">'calories'</span>] <span class="op">*</span> <span class="fl">.0305</span>) <span class="op">+</span> (df[<span class="st">'fat'</span>] <span class="op">*</span> <span class="fl">.275</span>) <span class="op">+</span> (df[<span class="st">'sugars'</span>] <span class="op">*</span> <span class="fl">.12</span>) <span class="op">-</span> (df[<span class="st">'protein'</span>] <span class="op">*</span> <span class="fl">.098</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Round to nearest integer and convert to int type</span></span>

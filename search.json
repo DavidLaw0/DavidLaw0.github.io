@@ -516,13 +516,6 @@
     "text": "Paste in a template\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "notebooks/Exploration_02.html",
-    "href": "notebooks/Exploration_02.html",
-    "title": "Data Exploration 02",
-    "section": "",
-    "text": "You’re working as a data analyst at a cereal marketing company in New York.\nIn a strategy meeting, the marketing director tells you that in 2018, the US weight loss industry was worth over $72 Billion dollars, growing 4% compared to the previous year.\nIn contrast, sales of cold cereal fell 6% to $8.5 billion during the same time period.\nCereal executives have approached the marketing company asking how they can somehow tap into the weight loss market growth to boost the sales of their cereal brands.\nYour assignment is to analyze a dataset of nutritional information for major US cereals, and calculate some metrics that can be used by the marketing team."
-  },
-  {
     "objectID": "notebooks/Exploration_02.html#part-1-import-pandas-and-load-the-data",
     "href": "notebooks/Exploration_02.html#part-1-import-pandas-and-load-the-data",
     "title": "Data Exploration 02",
