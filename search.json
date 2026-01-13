@@ -33,70 +33,342 @@
     ]
   },
   {
-    "objectID": "Cleansing_Exploration/project1.html",
-    "href": "Cleansing_Exploration/project1.html",
+    "objectID": "Cleansing_Exploration/project5.html",
+    "href": "Cleansing_Exploration/project5.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Cleansing_Exploration/project2.html",
-    "href": "Cleansing_Exploration/project2.html",
+    "objectID": "Cleansing_Exploration/project4.html",
+    "href": "Cleansing_Exploration/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "full_stack.html",
-    "href": "full_stack.html",
+    "objectID": "Cleansing_Exploration/project3.html",
+    "href": "Cleansing_Exploration/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Full Stack"
+      "Data Cleansing"
     ]
   },
   {
-    "objectID": "full_stack.html#title-2-header",
-    "href": "full_stack.html#title-2-header",
+    "objectID": "cleansing.html#title-2-header",
+    "href": "cleansing.html#title-2-header",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Full Stack"
+      "Data Cleansing"
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project5.html",
-    "href": "Cleansing_Projects/project5.html",
+    "objectID": "Cleansing_Projects/project1.html",
+    "href": "Cleansing_Projects/project1.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Cleansing",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Cleansing_Projects/project2.html",
+    "href": "Cleansing_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Story_Telling/project5.html",
+    "href": "Story_Telling/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
       "Project 5"
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project4.html",
-    "href": "Cleansing_Projects/project4.html",
+    "objectID": "Story_Telling/project4.html",
+    "href": "Story_Telling/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Cleansing",
+      "Story Telling",
       "Project 4"
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project3.html",
-    "href": "Cleansing_Projects/project3.html",
+    "objectID": "Story_Telling/project3.html",
+    "href": "Story_Telling/project3.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
-      "Data Cleansing",
+      "Story Telling",
       "Project 3"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "objectID": "ml.html#title-2-header",
+    "href": "ml.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Machine Learning"
+    ]
+  },
+  {
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "story_telling.html#title-2-header",
+    "href": "story_telling.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Story Telling"
+    ]
+  },
+  {
+    "objectID": "Competition/project5.html",
+    "href": "Competition/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "Competition/project4.html",
+    "href": "Competition/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Competition/project3.html",
+    "href": "Competition/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Competition/project2.html",
+    "href": "Competition/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 2"
+    ]
+  },
+  {
+    "objectID": "Competition/project1.html",
+    "href": "Competition/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Competition",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Competition"
+    ]
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Competition"
+    ]
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics",
+    "crumbs": [
+      "Data Exploration"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 3"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project4.html",
+    "href": "Machine_Learning/project4.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "Machine_Learning/project5.html",
+    "href": "Machine_Learning/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Machine Learning",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "David Lawrence’s cv",
+    "section": "",
+    "text": "Phone: (309)-533-3431 \\ Email: drl.lawrence2@gmail.com \\ LinkedIn: https://www.linkedin.com/in/davidlawrence001/"
+  },
+  {
+    "objectID": "resume.html#legal-intern",
+    "href": "resume.html#legal-intern",
+    "title": "David Lawrence’s cv",
+    "section": "Legal Intern \\",
+    "text": "Legal Intern \\\nHuhem Law Firm PLLC — Dallas, Texas \\ July 2025 – September 2025\n\nIdentified a procedural gap during trial preparation by consulting opposing counsel post-hearing and recommended a documentation protocol, saving clients hundreds of dollars per case\nDrafted and filed legal documents including eviction petitions, civil litigation petitions, demand letters, and legal memos\nRepresented firm’s clients in court as an agent, winning more than 90% of cases"
+  },
+  {
+    "objectID": "resume.html#volunteer",
+    "href": "resume.html#volunteer",
+    "title": "David Lawrence’s cv",
+    "section": "Volunteer \\",
+    "text": "Volunteer \\\nChurch of Jesus Christ of Latter-Day Saints — Abidjan, Côte d’Ivoire \\ November 2021 – November 2023\n\nServed as a full-time volunteer focusing on planning, goal setting, leadership, and creating service opportunities\nGained conversational and written fluency in French within six months by working daily with native speakers\nTrained and supervised more than 20 volunteers by teaching French, cultural norms, and effective teaching techniques"
+  },
+  {
+    "objectID": "resume.html#front-desk-receptionist",
+    "href": "resume.html#front-desk-receptionist",
+    "title": "David Lawrence’s cv",
+    "section": "Front Desk Receptionist \\",
+    "text": "Front Desk Receptionist \\\nDoubleTree by Hilton — Bloomington, Illinois \\ April 2021 – October 2021\n\nSolved problems under pressure, ensuring accurate payments and improving workflow, preventing major financial losses\nImproved efficiency by optimizing guest records and proactively addressing special requests, saving an average of one hour during rush periods\nProvided exceptional service by fulfilling custom client requests beyond standard job duties\nElevated workplace appearance by consistently wearing a suit, inspiring coworkers to follow"
+  },
+  {
+    "objectID": "Story_Telling/project2.html",
+    "href": "Story_Telling/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Story Telling",
+      "Project 2"
     ]
   },
   {
@@ -177,343 +449,113 @@
     ]
   },
   {
-    "objectID": "Story_Telling/project2.html",
-    "href": "Story_Telling/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "David Lawrence’s cv",
-    "section": "",
-    "text": "Phone: (309)-533-3431 \\ Email: drl.lawrence2@gmail.com \\ LinkedIn: https://www.linkedin.com/in/davidlawrence001/"
-  },
-  {
-    "objectID": "resume.html#legal-intern",
-    "href": "resume.html#legal-intern",
-    "title": "David Lawrence’s cv",
-    "section": "Legal Intern \\",
-    "text": "Legal Intern \\\nHuhem Law Firm PLLC — Dallas, Texas \\ July 2025 – September 2025\n\nIdentified a procedural gap during trial preparation by consulting opposing counsel post-hearing and recommended a documentation protocol, saving clients hundreds of dollars per case\nDrafted and filed legal documents including eviction petitions, civil litigation petitions, demand letters, and legal memos\nRepresented firm’s clients in court as an agent, winning more than 90% of cases"
-  },
-  {
-    "objectID": "resume.html#volunteer",
-    "href": "resume.html#volunteer",
-    "title": "David Lawrence’s cv",
-    "section": "Volunteer \\",
-    "text": "Volunteer \\\nChurch of Jesus Christ of Latter-Day Saints — Abidjan, Côte d’Ivoire \\ November 2021 – November 2023\n\nServed as a full-time volunteer focusing on planning, goal setting, leadership, and creating service opportunities\nGained conversational and written fluency in French within six months by working daily with native speakers\nTrained and supervised more than 20 volunteers by teaching French, cultural norms, and effective teaching techniques"
-  },
-  {
-    "objectID": "resume.html#front-desk-receptionist",
-    "href": "resume.html#front-desk-receptionist",
-    "title": "David Lawrence’s cv",
-    "section": "Front Desk Receptionist \\",
-    "text": "Front Desk Receptionist \\\nDoubleTree by Hilton — Bloomington, Illinois \\ April 2021 – October 2021\n\nSolved problems under pressure, ensuring accurate payments and improving workflow, preventing major financial losses\nImproved efficiency by optimizing guest records and proactively addressing special requests, saving an average of one hour during rush periods\nProvided exceptional service by fulfilling custom client requests beyond standard job duties\nElevated workplace appearance by consistently wearing a suit, inspiring coworkers to follow"
-  },
-  {
-    "objectID": "Machine_Learning/project5.html",
-    "href": "Machine_Learning/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project4.html",
-    "href": "Machine_Learning/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project3.html",
-    "href": "Machine_Learning/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "exploration.html",
-    "href": "exploration.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "exploration.html#title-2-header",
-    "href": "exploration.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Data Exploration"
-    ]
-  },
-  {
-    "objectID": "competition.html",
-    "href": "competition.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Competition"
-    ]
-  },
-  {
-    "objectID": "competition.html#title-2-header",
-    "href": "competition.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Competition"
-    ]
-  },
-  {
-    "objectID": "Competition/project1.html",
-    "href": "Competition/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Competition/project2.html",
-    "href": "Competition/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Competition/project3.html",
-    "href": "Competition/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Competition/project4.html",
-    "href": "Competition/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Competition/project5.html",
-    "href": "Competition/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Competition",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "story_telling.html",
-    "href": "story_telling.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Story Telling"
-    ]
-  },
-  {
-    "objectID": "story_telling.html#title-2-header",
-    "href": "story_telling.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Story Telling"
-    ]
-  },
-  {
-    "objectID": "ml.html",
-    "href": "ml.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Machine Learning"
-    ]
-  },
-  {
-    "objectID": "ml.html#title-2-header",
-    "href": "ml.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics",
-    "crumbs": [
-      "Machine Learning"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project2.html",
-    "href": "Machine_Learning/project2.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 2"
-    ]
-  },
-  {
-    "objectID": "Machine_Learning/project1.html",
-    "href": "Machine_Learning/project1.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Machine Learning",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "index.html#title-2-header",
-    "href": "index.html#title-2-header",
-    "title": "about me",
-    "section": "",
-    "text": "MarkDown Basics"
-  },
-  {
-    "objectID": "Story_Telling/project3.html",
-    "href": "Story_Telling/project3.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 3"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project4.html",
-    "href": "Story_Telling/project4.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "Story_Telling/project5.html",
-    "href": "Story_Telling/project5.html",
-    "title": "Client Report - [Insert Project Title]",
-    "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Story Telling",
-      "Project 5"
-    ]
-  },
-  {
-    "objectID": "Cleansing_Projects/project2.html",
-    "href": "Cleansing_Projects/project2.html",
+    "objectID": "Cleansing_Projects/project3.html",
+    "href": "Cleansing_Projects/project3.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Cleansing",
-      "Project 2"
+      "Project 3"
     ]
   },
   {
-    "objectID": "Cleansing_Projects/project1.html",
-    "href": "Cleansing_Projects/project1.html",
+    "objectID": "Cleansing_Projects/project4.html",
+    "href": "Cleansing_Projects/project4.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top",
     "crumbs": [
       "Data Cleansing",
-      "Project 1"
+      "Project 4"
     ]
   },
   {
-    "objectID": "cleansing.html",
-    "href": "cleansing.html",
+    "objectID": "Cleansing_Projects/project5.html",
+    "href": "Cleansing_Projects/project5.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Data Cleansing",
+      "Project 5"
+    ]
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Data Cleansing"
+      "Full Stack"
     ]
   },
   {
-    "objectID": "cleansing.html#title-2-header",
-    "href": "cleansing.html#title-2-header",
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
     "title": "about me",
     "section": "",
     "text": "MarkDown Basics",
     "crumbs": [
-      "Data Cleansing"
+      "Full Stack"
     ]
   },
   {
-    "objectID": "Cleansing_Exploration/project3.html",
-    "href": "Cleansing_Exploration/project3.html",
+    "objectID": "Cleansing_Exploration/project2.html",
+    "href": "Cleansing_Exploration/project2.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Cleansing_Exploration/project4.html",
-    "href": "Cleansing_Exploration/project4.html",
+    "objectID": "Cleansing_Exploration/project1.html",
+    "href": "Cleansing_Exploration/project1.html",
     "title": "Client Report - [Insert Project Title]",
     "section": "",
     "text": "Paste in a template\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "Cleansing_Exploration/project5.html",
-    "href": "Cleansing_Exploration/project5.html",
-    "title": "Client Report - [Insert Project Title]",
+    "objectID": "notebooks/Exploration_02.html",
+    "href": "notebooks/Exploration_02.html",
+    "title": "Data Exploration 02",
     "section": "",
-    "text": "Paste in a template\n\n\n\n\n Back to top"
+    "text": "You’re working as a data analyst at a cereal marketing company in New York.\nIn a strategy meeting, the marketing director tells you that in 2018, the US weight loss industry was worth over $72 Billion dollars, growing 4% compared to the previous year.\nIn contrast, sales of cold cereal fell 6% to $8.5 billion during the same time period.\nCereal executives have approached the marketing company asking how they can somehow tap into the weight loss market growth to boost the sales of their cereal brands.\nYour assignment is to analyze a dataset of nutritional information for major US cereals, and calculate some metrics that can be used by the marketing team."
+  },
+  {
+    "objectID": "notebooks/Exploration_02.html#part-1-import-pandas-and-load-the-data",
+    "href": "notebooks/Exploration_02.html#part-1-import-pandas-and-load-the-data",
+    "title": "Data Exploration 02",
+    "section": "Part 1: Import Pandas and load the data",
+    "text": "Part 1: Import Pandas and load the data\nRemember to import Pandas the conventional way. If you’ve forgotten how, you may want to review Data Exploration 01.\nThe dataset for this exploration is stored at the following url:\nhttps://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv\nThere are lots of ways to load data into your workspace. The easiest way in this case is to ask Pandas to do it for you.\n\nInitial Data Analysis\nOnce you’ve loaded the data, it’s a good idea to poke around a little bit to find out what you’re dealing with.\nSome questions you might ask include:\n\nWhat does the data look like?\nWhat kind of data is in each column?\nDo any of the columns have missing values?\n\n\n# Part 1: Enter your code below to import Pandas according to the\n# conventional method. Then load the dataset into a Pandas dataframe.\n\nimport pandas as pd\n\nurl = 'https://raw.githubusercontent.com/byui-cse/cse450-course/master/data/cereal.csv'\n\ndf = pd.read_csv(url)\n\nprint(df.head)\nprint(df.info)\ndf.isnull().sum()\n# Write any code needed to explore the data by seeing what the first few\n# rows look like. Then display a technical summary of the data to determine\n# the data types of each column, and which columns have missing data.\n\n&lt;bound method NDFrame.head of                          name mfr type  calories  protein  fat  sodium  fiber  \\\n0                   100% Bran   N    C        70        4    1     130   10.0   \n1           100% Natural Bran   Q    C       120        3    5      15    2.0   \n2                    All-Bran   K    C        70        4    1     260    9.0   \n3   All-Bran with Extra Fiber   K    C        50        4    0     140   14.0   \n4              Almond Delight   R    C       110        2    2     200    1.0   \n..                        ...  ..  ...       ...      ...  ...     ...    ...   \n72                    Triples   G    C       110        2    1     250    0.0   \n73                       Trix   G    C       110        1    1     140    0.0   \n74                 Wheat Chex   R    C       100        3    1     230    3.0   \n75                   Wheaties   G    C       100        3    1     200    3.0   \n76        Wheaties Honey Gold   G    C       110        2    1     200    1.0   \n\n    carbo  sugars  potass  vitamins  shelf  weight  cups     rating  \n0     5.0       6     280        25      3     1.0  0.33  68.402973  \n1     8.0       8     135         0      3     1.0  1.00  33.983679  \n2     7.0       5     320        25      3     1.0  0.33  59.425505  \n3     8.0       0     330        25      3     1.0  0.50  93.704912  \n4    14.0       8      -1        25      3     1.0  0.75  34.384843  \n..    ...     ...     ...       ...    ...     ...   ...        ...  \n72   21.0       3      60        25      3     1.0  0.75  39.106174  \n73   13.0      12      25        25      2     1.0  1.00  27.753301  \n74   17.0       3     115        25      1     1.0  0.67  49.787445  \n75   17.0       3     110        25      1     1.0  1.00  51.592193  \n76   16.0       8      60        25      1     1.0  0.75  36.187559  \n\n[77 rows x 16 columns]&gt;\n&lt;bound method DataFrame.info of                          name mfr type  calories  protein  fat  sodium  fiber  \\\n0                   100% Bran   N    C        70        4    1     130   10.0   \n1           100% Natural Bran   Q    C       120        3    5      15    2.0   \n2                    All-Bran   K    C        70        4    1     260    9.0   \n3   All-Bran with Extra Fiber   K    C        50        4    0     140   14.0   \n4              Almond Delight   R    C       110        2    2     200    1.0   \n..                        ...  ..  ...       ...      ...  ...     ...    ...   \n72                    Triples   G    C       110        2    1     250    0.0   \n73                       Trix   G    C       110        1    1     140    0.0   \n74                 Wheat Chex   R    C       100        3    1     230    3.0   \n75                   Wheaties   G    C       100        3    1     200    3.0   \n76        Wheaties Honey Gold   G    C       110        2    1     200    1.0   \n\n    carbo  sugars  potass  vitamins  shelf  weight  cups     rating  \n0     5.0       6     280        25      3     1.0  0.33  68.402973  \n1     8.0       8     135         0      3     1.0  1.00  33.983679  \n2     7.0       5     320        25      3     1.0  0.33  59.425505  \n3     8.0       0     330        25      3     1.0  0.50  93.704912  \n4    14.0       8      -1        25      3     1.0  0.75  34.384843  \n..    ...     ...     ...       ...    ...     ...   ...        ...  \n72   21.0       3      60        25      3     1.0  0.75  39.106174  \n73   13.0      12      25        25      2     1.0  1.00  27.753301  \n74   17.0       3     115        25      1     1.0  0.67  49.787445  \n75   17.0       3     110        25      1     1.0  1.00  51.592193  \n76   16.0       8      60        25      1     1.0  0.75  36.187559  \n\n[77 rows x 16 columns]&gt;\n\n\n\n\n\n\n\n\n\n0\n\n\n\n\nname\n0\n\n\nmfr\n0\n\n\ntype\n0\n\n\ncalories\n0\n\n\nprotein\n0\n\n\nfat\n0\n\n\nsodium\n0\n\n\nfiber\n0\n\n\ncarbo\n0\n\n\nsugars\n0\n\n\npotass\n0\n\n\nvitamins\n0\n\n\nshelf\n0\n\n\nweight\n0\n\n\ncups\n0\n\n\nrating\n0\n\n\n\n\ndtype: int64"
+  },
+  {
+    "objectID": "notebooks/Exploration_02.html#part-2-calculate-summary-statistics",
+    "href": "notebooks/Exploration_02.html#part-2-calculate-summary-statistics",
+    "title": "Data Exploration 02",
+    "section": "Part 2: Calculate Summary Statistics",
+    "text": "Part 2: Calculate Summary Statistics\nThe marketing team has determined that when choosing a cereal, consumers are most interested in calories, sugars, fiber, fat, and protein.\nFirst, let’s calcuate some summary statistics for these categories across the entire dataset. We’re particularly intrested in the mean, median, standard deviation, min, and max values.\nThere are multiple ways to accomplish this.\n\n# Part 2: Enter your code below to calculate summary statistics for the\n# calories, sugars, fiber, fat, and protein features.\n\ndf[['calories', 'protein', 'fat', 'sugars', 'fiber']].describe()\n\n\n    \n\n\n\n\n\n\ncalories\nprotein\nfat\nsugars\nfiber\n\n\n\n\ncount\n77.000000\n77.000000\n77.000000\n77.000000\n77.000000\n\n\nmean\n106.883117\n2.545455\n1.012987\n6.922078\n2.151948\n\n\nstd\n19.484119\n1.094790\n1.006473\n4.444885\n2.383364\n\n\nmin\n50.000000\n1.000000\n0.000000\n-1.000000\n0.000000\n\n\n25%\n100.000000\n2.000000\n0.000000\n3.000000\n1.000000\n\n\n50%\n110.000000\n3.000000\n1.000000\n7.000000\n2.000000\n\n\n75%\n110.000000\n3.000000\n2.000000\n11.000000\n3.000000\n\n\nmax\n160.000000\n6.000000\n5.000000\n15.000000\n14.000000"
+  },
+  {
+    "objectID": "notebooks/Exploration_02.html#part-3-transform-data",
+    "href": "notebooks/Exploration_02.html#part-3-transform-data",
+    "title": "Data Exploration 02",
+    "section": "Part 3: Transform Data",
+    "text": "Part 3: Transform Data\nTo make analysis easier, you want to convert the manufacturer codes used in the dataset to the manufacturer names.\nFirst, display the count of each manufacturer code value used in the dataset (found in the mfr column).\nThen, create a new column with the appropriate manufacturer name for each entry, using this mapping:\nA = American Home Food Products\nG = General Mills\nK = Kelloggs\nN = Nabisco\nP = Post\nQ = Quaker Oats\nR = Ralston Purina\n\nNote: While the tutorial linked above uses the replace function, using the map function instead can often be much faster and more memory efficient, especially for large datasets.\n\n\n# Display the count of values for the manufacturer code (\"mfr\" column), then\n# create a new column containing the appropriate manufacturer names.\nmfr_map = {\n    'A': 'American Home Food Products',\n    'G': 'General Mills',\n    'K': 'Kelloggs',\n    'N': 'Nabisco',\n    'P': 'Post',\n    'Q': 'Quaker Oats',\n    'R': 'Ralston Purina'\n}\n\n\ndf['mfr_name'] = df['mfr'].map(mfr_map)\n\n\ndf.head()\n\n\n\n\n\n    \n\n\n\n\n\n\nname\nmfr\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\nmfr_name\n\n\n\n\n0\n100% Bran\nN\nC\n70\n4\n1\n130\n10.0\n5.0\n6\n280\n25\n3\n1.0\n0.33\n68.402973\nNabisco\n\n\n1\n100% Natural Bran\nQ\nC\n120\n3\n5\n15\n2.0\n8.0\n8\n135\n0\n3\n1.0\n1.00\n33.983679\nQuaker Oats\n\n\n2\nAll-Bran\nK\nC\n70\n4\n1\n260\n9.0\n7.0\n5\n320\n25\n3\n1.0\n0.33\n59.425505\nKelloggs\n\n\n3\nAll-Bran with Extra Fiber\nK\nC\n50\n4\n0\n140\n14.0\n8.0\n0\n330\n25\n3\n1.0\n0.50\n93.704912\nKelloggs\n\n\n4\nAlmond Delight\nR\nC\n110\n2\n2\n200\n1.0\n14.0\n8\n-1\n25\n3\n1.0\n0.75\n34.384843\nRalston Purina"
+  },
+  {
+    "objectID": "notebooks/Exploration_02.html#part-4-visualization",
+    "href": "notebooks/Exploration_02.html#part-4-visualization",
+    "title": "Data Exploration 02",
+    "section": "Part 4: Visualization",
+    "text": "Part 4: Visualization\nLet’s do some more data exploration visually.\nImport your visualization library of choice and set any needed configuration options.\n\n# Import your visualization library\nimport plotly.express as px\n\n\n\nSugar Distribution\nMarketing tells us that their surveys have revealed that sugar content is the number one concern of consumers when choosing cereal.\nThey would like to see the following visualizations:\n\nA histogram plot of the sugar content in all cereals.\nA scatter plot showing the relationship between sugar and calories.\nA box plot showing the distribution of sugar content by manufacturer.\n\n\n# Create the three visualzations requested by the the marketing team\n\n# 1. Histogram of Sugar Content\nfig_hist = px.histogram(df, x=\"sugars\",\n                         title=\"Distribution of Sugar Content in Cereals\",\n                         labels={'sugars': 'Sugar (grams)'},\n                         nbins=20,\n                         color_discrete_sequence=['indianred'])\nfig_hist.show()\n\n\n\n\n\n                                \n                                            \n\n\n\n\n\nfig_scatter = px.scatter(df, x=\"sugars\", y=\"calories\",\n                         title=\"Relationship Between Sugar and Calories\",\n                         labels={'sugars': 'Sugar (grams)', 'calories': 'Calories'},\n                         hover_name='name', # Shows cereal name on hover\n                         trendline=\"ols\")   # Adds a line of best fit\nfig_scatter.show()\n\n\n\n\n                                \n                                            \n\n\n\n\n\nfig_box = px.box(df, x=\"mfr_name\", y=\"sugars\",\n                 title=\"Sugar Content Distribution by Manufacturer\",\n                 labels={'mfr_name': 'Manufacturer', 'sugars': 'Sugar (grams)'},\n                 color=\"mfr_name\")\nfig_box.update_layout(xaxis={'categoryorder':'total descending'})\nfig_box.show()"
+  },
+  {
+    "objectID": "notebooks/Exploration_02.html#above-and-beyond",
+    "href": "notebooks/Exploration_02.html#above-and-beyond",
+    "title": "Data Exploration 02",
+    "section": "🌟 Above and Beyond 🌟",
+    "text": "🌟 Above and Beyond 🌟\nThe marketing team is pleased with what you’ve accomplished so far. They have a meeting with top cereal executives in the morning, and they’d like you to do as many of the following additional tasks as you have time for:\n\nWeight Watchers used to have an older points system that used this formula: (calories / 50) + (fat / 12) - (fiber / 5), but only the first 4 grams of fiber were included in the calculation. For comparison’s sake, create an additional column with the calculation for the old points system.\nMarketing really likes the boxplot of the sugar content for each cereal, they’d like similar plots for calories and fat, but using different color schemes for each chart."
   },
   {
     "objectID": "Full_Stack/project2.html",
